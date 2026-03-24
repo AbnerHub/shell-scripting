@@ -14,20 +14,20 @@ The script must not accept a value other than 1 to 12. If not the script must ex
 ```
 month_number=$1
 
-if [ -z $month_number ]
+if [ -z $month_number ] #-z is used to know if a string is empty
 then
   echo "No month number given. Please enter a month number as a command line argument."
   echo "eg: ./print-month-number 5"
   exit
 fi
 
-if [[ $month_number -lt 1 && $month_number -gt 12 ]]
+if [[ $month_number -lt 1 || $month_number -gt 12 ]] #Using OR instead of AND opertator due a number can not have 2 values at same time and AND Condition´ll always be False
 then
   echo "Invalid month number given. Please enter a valid number - 1 to 12."
   exit
 fi
 
-if [ $month_number -eq 1 ]
+if [ $month_number -eq 1 ] #Also can be used $month_number = 1
 then
   echo "January"
 elif [ $month_number -eq 2 ]
