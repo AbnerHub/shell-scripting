@@ -21,6 +21,8 @@ that has extension ´jpeg´ to `jpg.` A file with any other extension should rem
 ### Solution 
 
 Directory `Images` has all the images `files` inside it,  thats why we use **ls** insted of **cat**  
+- `ls` is used to list all file inside of a directory
+- `cat` is used to list what is inside of a file
 ```
 for file in $(ls images)
 do 
