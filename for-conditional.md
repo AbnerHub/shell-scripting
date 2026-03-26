@@ -1,11 +1,12 @@
 # for conditional 
 
 ### structure
+```
 for **variable_name** in **List**
 do 
     **acction**
 done
-
+```
 
 ### Lab Task 
 
