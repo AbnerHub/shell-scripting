@@ -40,7 +40,7 @@ then
 ```
 new_name=$(echo $file | sed ´s/.jpeg/.jpg/g´
 ```
-We need don´t need to specify the full path  `/home/bob/image` cause when we create $file variable, linux saves the directory name as part of the variable. 
+We don´t need to specify the full path  `/home/bob/image` cause when we create `$file` variable, linux saves the directory name as part of the variable. 
 ```
      mv /image/$new_name /image/$new_name
   fi
