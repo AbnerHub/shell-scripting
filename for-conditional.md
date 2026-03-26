@@ -33,9 +33,9 @@ if [[ $file = *.jpeg ]]
 then
 ```
 1. `$()` Command substitution: Shell executes wherevee is inside the parentheses
-2.  echo $file: Prints what is the $file variable eg. cat.jpeg
+2. `echo $file`: Prints what is in the $file variable eg. cat.jpeg
 3. `pipe` **|** Takes the output of **echo** and sends it directly input **sed** command
-4. ´sed´ Stream editor: replace .jpeg extension to .jpg
+4. `sed` Stream editor: replace .jpeg extension to .jpg
 
 ```
 new_name=$(echo $file | sed ´s/.jpeg/.jpg/g´
